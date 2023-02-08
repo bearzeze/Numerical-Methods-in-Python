@@ -1,0 +1,8 @@
+{
+    "python.analysis.extraPaths": [
+        "./Section 7 - Ordinary Differential Equations",
+        "./Section 2 - Roots of High-Degree Equations",
+        "./Section 3 - Interpolation and Approximation",
+        "./Section 3 - Interpolation and Curve Fitting"
+    ]
+}
