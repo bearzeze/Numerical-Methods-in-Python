@@ -1,7 +1,7 @@
 import math
 
 
-def method(x_values, y_values, degree):
+def method(x_values, y_values):
     x_target = float(input("Enter number: "))
     
     m = len(x_values)
@@ -15,7 +15,7 @@ def method(x_values, y_values, degree):
     for i in range(0, len(x_values)):
         y_target += y_values[i] * lagrangian(i, x_values, x_target)
         
-    print(f"For x = {x_target}, y = {y_target}")
+    print(f"For x = {x_target}, y = {y_target}, using {degree}. degree polynomial Lagrange's interpolation.")
 
         
 def lagrangian(i, x, x_target):
