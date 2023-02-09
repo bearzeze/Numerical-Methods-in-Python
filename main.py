@@ -1,10 +1,10 @@
 import sys 
 import os
 PATH  = "D:/Kursevi/Programming Numerical Methods in Python"
-sys.path.append(os.path.join(PATH, 'Section 2 - Roots of High-Degree Equations'))
-import iteration_method, newton_raphson, bisection, regula_falsi, secant, python_functions2
+sys.path.append(os.path.join(PATH, 'Section 1 - Roots of High-Degree Equations'))
+import iteration_method, newton_raphson, bisection, regula_falsi, secant, python_built_in_functions1
 
-sys.path.append(os.path.join(PATH, 'Section 3 - Interpolation and Curve Fitting'))
+sys.path.append(os.path.join(PATH, 'Section 2 - Interpolation and Curve Fitting'))
 import linear_interpolation, lagrange_interpolation, newton_interpolation, linear_regression
 
 import numpy as np
@@ -31,9 +31,9 @@ def section_3_intepolation_and_curve_fitting():
  
 def section_2_roots_finding():
     
-    funkcija = lambda x : x**2 + (math.cos(x))**2 - 4 * x
+    some_function = lambda x : x**2 + (math.cos(x))**2 - 4 * x
     
-    python_functions2.fsolve_root_finding_method(f=y)
+    python_built_in_functions1.fsolve_root_finding_method(f=y)
 
     # Function for which is calculating single root
     def y(x):
