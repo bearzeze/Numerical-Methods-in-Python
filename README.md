@@ -15,7 +15,7 @@ Numerical methods and code are divided in sections with numerous most popular me
 Fork and download if you and as you like.
 
 ## **Sections Descripiton**
-Design of the web application was heavly based on the Bootstrap template created b
+Every section provides user defined code of the known methods as well as Python built-in functions.
 
 ### **Section 1 - Roots of High Degree Equations**
 There are code for the known algorithms of finding the roots of the high-degree equations:
