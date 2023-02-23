@@ -93,12 +93,35 @@ You will need first to install scipy module:
 
 `pip install scipy`
 
-And afterwards import methods for interpolation and curve fitting:
+And afterwards import methods for the numerical differentiation:
 
 `from scipy.misc import derivative`
 <br />
 <br />
 
+### **Section 4 - Numerical Integration**
+There are code for the three methods for numerical integrations, known as quadrature also:
+* Trapezodial rule
+* Simpsons 1/3 rule
+* Simpsons 3/8 rule
+
+There is also code for the double integration using Simpsons 1/3 rule.
+
+There is also Python built-in methods from the SciPy module, shown with example:
+
+* `quad()`
+* `dblquad()`
+* `nquad()`
+
+You will need first to install scipy module:
+
+`pip install scipy`
+
+And afterwards import methods for numerical integration:
+
+`from scipy.integration import quad, dblquad, nquad`
+<br />
+<br />
 
 
 ## **Needs To Be Done**

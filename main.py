@@ -11,6 +11,9 @@ import linear_interpolation, lagrange_interpolation, newton_interpolation, linea
 sys.path.append(os.path.join(PATH, 'Section 3 - Numerical Differentiation'))
 import finite_differences, python_built_in_functions3
 
+sys.path.append(os.path.join(PATH, 'Section 4 - Numerical Integration'))
+import trapezodial_rule, simpson_1_3_rule, simpson_3_8_rule, double_integration, python_built_in_functions4
+
 import numpy as np
 import scipy
 import random
@@ -19,8 +22,23 @@ import matplotlib.pyplot as plt
  
  
 def main():
-    section_3_differentiation()
+    section_4_integration()
  
+
+def section_4_integration():
+    f = lambda x: math.sin(x) * x
+    
+    trapezodial_rule.method(f, x0=0, xn=math.pi/2)
+    simpson_1_3_rule.method(f, x0=0, xn=math.pi/2, n=6)
+    simpson_3_8_rule.method(f, x0=0, xn=math.pi/2, n=6)
+    
+    func = lambda x, y: x**2 * y + x * y**2
+    
+    double_integration.method(func, x0=1, xn=2, y0=-1, yn=1)
+    
+    python_built_in_functions4.integration(f, x0=0, xn=math.pi/2)
+    python_built_in_functions4.double_integration(func, x0=1, xn=2, y0=-1, yn=1)
+    
 
 def section_3_differentiation():
     f = lambda x: 0.1 * x**5 - 0.2 * x**3 + 0.1 * x - 0.2
